@@ -1,0 +1,73 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body{
+	min-height: 100vh;
+	background: #eee;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	font-family: 'Century Gothic';
+}
+
+h1{
+	font-size: 50px;
+}
+
+.container{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	min-height: 500px;
+}
+
+.container h3{
+	font-size: 30px;
+}
+
+.container .input{
+	display: flex;
+	flex-direction: column;
+}
+
+.container .input input, select{
+	padding: 20px 10px;
+	margin: 15px 10px;
+}
+
+.container .input input, select{
+	font-size: 20px;
+}
+
+.container .input input{
+	font-size: 25px;
+}
+
+.container .two input{        
+	pointer-events: none;
+}
+
+@media (max-width: 755px){
+	.container .input input, select{
+		font-size: 15px;
+	}
+	
+	.container .input input{
+		font-size: 20px;
+	}
+}
+
+@media (max-width: 600px){
+	h1{
+		font-size: 30px;
+	}
+
+	.container{
+		flex-direction: column;
+		justify-content: center;
+	}
+}
